@@ -1,0 +1,32 @@
+.advantages {
+  display: flex;
+}
+
+.advantages__item + .advantages__item {
+  margin-left: var(--card-gap);
+}
+
+.advantages__item {
+  width: 270px;
+}
+
+.advantages__icon {
+  @include align-list;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--button-color);
+  border-radius: 4px;
+}
+
+.advantages__description {
+  margin: 0;
+  line-height: 1.71;
+  min-height: 75px;
+}
+.advantages__title {
+  @include font(700, null, 1.14, null);
+  color: var(--secondary-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
